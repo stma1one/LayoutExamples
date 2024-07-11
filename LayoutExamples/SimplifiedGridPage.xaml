@@ -8,7 +8,7 @@
     <Grid
         ColumnSpacing="3"
         Grid.ColumnDefinitions="*,*"
-        RowDefinitions=" 2*,100,100"
+        RowDefinitions=" .4*,.2*,.1*"
         RowSpacing="3">
 
 

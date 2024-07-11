@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LayoutExamples.FlexExample3Page"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexExample3Page">
+    <VerticalStackLayout>
+        <Label HorizontalTextAlignment="Center" Text="מה אתם חושבים על ההשתלמות עד עכשיו?" />
+        <FlexLayout
+            Margin="5"
+            Direction="Row"
+            JustifyContent="SpaceEvenly"
+            Wrap="Wrap">
+            <Button Clicked="OnAddVoteClick" Text="גרוע" />
+            <Button Clicked="OnAddVoteClick" Text="מעולה" />
+            <Button Clicked="OnAddVoteClick" Text="לא אכפת לי" />
+            <Button Clicked="OnAddVoteClick" Text="אני פה בשביל הגמול" />
+            <Button
+                Margin="5"
+                Clicked="OnAddVoteClick"
+                Text="משלים.ה שעות שינה" />
+        </FlexLayout>
+        <BoxView HeightRequest="3" Color="Purple" />
+        <FlexLayout
+            x:Name="cloudTags"
+            AlignContent="SpaceAround"
+            JustifyContent="Center"
+            Wrap="Wrap" />
+    </VerticalStackLayout>
+</ContentPage>

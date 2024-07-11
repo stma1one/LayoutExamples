@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="LayoutExamples.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -10,7 +10,7 @@
         Padding="20"
         BackgroundColor="CadetBlue"
         Spacing="20">
-        <Button Clicked="Button_Clicked" Text="Frame Example" />
+        <Button Clicked="Button_Clicked" Text="Border Example" />
         <Button Clicked="Button_Clicked" Text="ScrollView Example" />
         <Button Clicked="Button_Clicked" Text="Horizontal StackLayout Example" />
         <Button Clicked="Button_Clicked" Text="Grid Example" />

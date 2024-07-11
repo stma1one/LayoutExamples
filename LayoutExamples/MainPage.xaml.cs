@@ -12,11 +12,11 @@ public partial class MainPage : ContentPage
 	private async void Button_Clicked(object sender, EventArgs e)
 	{
 		Button btn= sender as Button;
-		ContentPage p = null;
+		ContentPage p = null; 
 		switch(btn.Text)
 		{
-			case "Frame Example":
-				p = new FrameExamplePage();
+			case "Border Example":
+				p = new BorderExamplePage();
 				await App.Current.MainPage.Navigation.PushAsync(p);
 				break;
 			case "ScrollView Example":

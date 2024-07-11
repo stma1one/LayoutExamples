@@ -10,6 +10,6 @@ public partial class GridExamplePage : ContentPage
 	private void Button_Clicked(object sender, EventArgs e)
 	{
 		Page p = new SimplifiedGridPage();
-		((App)Application.Current).MainPage.Navigation.PushAsync(p);
+		Navigation.PushAsync(p);
 	}
 }

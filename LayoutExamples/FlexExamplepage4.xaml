@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LayoutExamples.FlexExamplepage4"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexExamplepage4">
+    <ScrollView>
+
+        <VerticalStackLayout>
+            <ActivityIndicator
+                x:Name="activityIndicator"
+                IsRunning="True"
+                VerticalOptions="Center" />
+
+            <FlexLayout
+                x:Name="flexLayout"
+                JustifyContent="SpaceAround"
+                Wrap="Wrap" />
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

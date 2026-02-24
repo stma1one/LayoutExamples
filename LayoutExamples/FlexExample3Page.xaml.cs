@@ -1,4 +1,4 @@
-﻿using Microsoft.Maui.Controls.Compatibility.Platform.Android;
+﻿
 using Microsoft.Maui.Controls.Shapes;
 
 namespace LayoutExamples;

@@ -2,7 +2,7 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	
 
 	public MainPage()
 	{
@@ -17,23 +17,23 @@ public partial class MainPage : ContentPage
 		{
 			case "Border Example":
 				p = new BorderExamplePage();
-				await App.Current.MainPage.Navigation.PushAsync(p);
+				await App.Current.Windows[0].Page.Navigation.PushAsync(p);
 				break;
 			case "ScrollView Example":
 				p = new ScrollViewExamplePage();
-                await App.Current.MainPage.Navigation.PushAsync(p);
+                await App.Current.Windows[0].Page.Navigation.PushAsync(p);
                 break;
 			case "Horizontal StackLayout Example":
 				p = new HorizontalStackLayoutExamplePage();
-                await App.Current.MainPage.Navigation.PushAsync(p);
+                await App.Current.Windows[0].Page.Navigation.PushAsync(p);
                 break;
 			case "Grid Example":
 				p = new GridExamplePage();
-               await App.Current.MainPage.Navigation.PushAsync(p);
+               await App.Current.Windows[0].Page.Navigation.PushAsync(p);
                 break;
             case "FlexLayout Example":
 				p = new FlexLayoutExamplePage();
-                await App.Current.MainPage.Navigation.PushAsync(p);
+                await App.Current.Windows[0].Page.Navigation.PushAsync(p);
                 break;
             default:
 				await DisplayAlert("אין מה לעשות פה", "אין פה כלום", "אישור");
